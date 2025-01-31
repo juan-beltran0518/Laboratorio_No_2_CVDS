@@ -5,6 +5,12 @@ package edu.eci.cvds.patterns.archetype;
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World! from the app");
+        if (args.length > 0) {
+            String fullName = String.join(" ", args);
+            System.out.println("Hello " + fullName + "!");
+        } else {
+            System.out.println("Hello World!");
+        }
     }
 }
+
