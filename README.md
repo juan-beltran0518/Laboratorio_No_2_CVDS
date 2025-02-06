@@ -105,8 +105,7 @@
 
 7. ¿Cuál fábrica hiciste? y ¿Cuál es mejor?
 
- - 
-
+ - Se hizo el patrón de Factory ya que tenemos una clase generica creadora con sus comportamientos y/o atributos.
 8. Ejecute múltiples veces la clase ShapeMain, usando el plugin exec de maven con los siguientes parámetros y verifique la salida en consola para cada una:
 - Sin parámetros
 
