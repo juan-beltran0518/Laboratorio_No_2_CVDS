@@ -4,8 +4,7 @@
 ### CREAR UN PROYECTO CON MAVEN
 1. Buscar cómo se crea un proyecto maven con ayuda de los arquetipos (archetypes).
 
-- Nos dirigimos a la pagina oficial de **Apache Maven** en el apartado de **Maven Plugins** y alli ubicamos el apartado de **Tools** y seleccionamos **archetype** para que asi nos pudiera mustrar un ejemplo de ejecucion de un proyecto mave bajo los siguientes comandos.
-
+- Nos dirigimos a la página oficial de **Apache Maven** en el apartado de **Maven Plugins** y allí ubicamos el apartado de **Tools** y seleccionamos **archetype** allí encontramos un ejemplo de creacion de un proyecto **Maven** con la siguiente estructura.
   - mvn archetype:generate
   - mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.5
   - edu.eci.cvds
@@ -39,7 +38,7 @@
 
 2. Busque cómo ejecutar desde línea de comandos, un proyecto maven y verifique la salida cuando se ejecuta con la clase `App.java` como parámetro en "mainClass". Tip: https://www.mojohaus.org/exec-maven-plugin/usage.html
 
- - mvn exec:exec
+ - mvn compile exec:java
 
 3. Realice el cambio en la clase `App.java` para crear un saludo personalizado, basado en los parámetros de entrada a la aplicación. 
 
@@ -105,12 +104,13 @@
 
 7. ¿Cuál fábrica hiciste? y ¿Cuál es mejor?
 
- - 
+ - Factory Simple Method 
+ - Con este modelo de refactorización podemos seguir en este caso una estructura Optima de construcción de acuerdo a lo misto en clase como el principio SOLID.
 
 8. Ejecute múltiples veces la clase ShapeMain, usando el plugin exec de maven con los siguientes parámetros y verifique la salida en consola para cada una:
 - Sin parámetros
 
-[![mt.jpg](https://i.postimg.cc/NGbYdk1F/mt.jpg)](https://postimg.cc/K4KdzLph)
+[![sin-parametros.png](https://i.postimg.cc/2y71kJTM/sin-parametros.png)](https://postimg.cc/Lgh9vxc3)
 
 - Parámetro: qwerty
 
@@ -122,10 +122,13 @@
 
 - Parámetro: Hexagon
 
+[![Hex.png](https://i.postimg.cc/Ssb5qzwj/Hex.png)](https://postimg.cc/B8NNBtZG)
+
 ¿Cuál(es) de las anteriores instrucciones se ejecutan y funcionan correctamente y por qué?
 
-## Integrantes
+- Parámetro: qwerty
+- Parámetro: Hexagon
 
- - Salomon Baena
- - Sebastian Beltran 
+Al ingresar estos parámetros y compilarlos se ejecutan correctamente ya que en la clase **ShapeFactory** la entrada de cada una de las figuras esta con mayúscula.
+
  
