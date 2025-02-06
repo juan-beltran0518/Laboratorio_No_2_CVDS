@@ -104,13 +104,11 @@
 
 7. ¿Cuál fábrica hiciste? y ¿Cuál es mejor?
 
-<<<<<<< HEAD
  - Factory Simple Method 
  - Con este modelo de refactorización podemos seguir en este caso una estructura Optima de construcción de acuerdo a lo misto en clase como el principio SOLID.
 
 =======
  - Se hizo el patrón de Factory ya que tenemos una clase generica creadora con sus comportamientos y/o atributos.
->>>>>>> eec90982d9749fc87fa9c511d13fd5f84fe53830
 8. Ejecute múltiples veces la clase ShapeMain, usando el plugin exec de maven con los siguientes parámetros y verifique la salida en consola para cada una:
 - Sin parámetros
 
