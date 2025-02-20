@@ -2,10 +2,16 @@ package edu.eci.cvds.patterns.shapes.concrete;
 
 import edu.eci.cvds.patterns.shapes.Shape;
 
-public class Quadrilateral implements Shape{
-	public int getNumberOfEdges() {
-		return 4;
-	}
+/**
+ * Representa un cuadrilátero, una figura geométrica de cuatro lados.
+ */
+public class Quadrilateral implements Shape {
+    /**
+     * Retorna el número de lados del cuadrilátero.
+     *
+     * @return Número de lados del cuadrilátero (4).
+     */
+    public int getNumberOfEdges() {
+        return 4;
+    }
 }
-
-
